@@ -34,7 +34,7 @@ import java.util.Comparator;
 	}
 	class SortbyBranch implements Comparator<Student>
 	{
-	    // Used for sorting in ascending order of Lname
+	    // Used for sorting in ascending order of Branch
 	    public int compare(Student a, Student b)
 	    {
 	        return a.getBranch().compareTo(b.getBranch());
@@ -42,7 +42,7 @@ import java.util.Comparator;
 	}
 	class SortbyYear implements Comparator<Student>
 	{
-	    // Used for sorting in ascending order of IdNo
+	    // Used for sorting in ascending order of Year
 	    public int compare(Student a, Student b)
 	    {
 	        return a.getYear() - b.getYear();

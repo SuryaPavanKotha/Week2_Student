@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Student_Main {
+public class Main {
 	private static ArrayList<Student> StudentList=new ArrayList<Student>();//ArrayList
 	
 	public static ArrayList<Student> getStudentList() {
@@ -57,7 +57,7 @@ public class Student_Main {
 	 */
 	public static void main(String[] args) {
 		Scanner ScannerObject=new Scanner(System.in);
-		Student_Main studentobj=new Student_Main();
+		Main studentobj=new Main();
 		studentobj.intialize();
 		boolean loopcondition=true;
 		while(loopcondition)
@@ -70,11 +70,11 @@ public class Student_Main {
 		       int Option2=ScannerObject.nextInt();
 		       switch(Option2)// switch used to select the option
 		       {
-		       case 1:Collections.sort(StudentList,new SortbyIdNo());Student_Main.print();break;
-		       case 2:Collections.sort(StudentList,new SortbyFName()); Student_Main.print();break;
-		       case 3:Collections.sort(StudentList,new SortbyLName());Student_Main.print();break;
-		       case 4:Collections.sort(StudentList,new SortbyYear());Student_Main.print();break;
-		       case 5:Collections.sort(StudentList,new SortbyBranch());Student_Main.print();break;
+		       case 1:Collections.sort(StudentList,new SortbyIdNo());Main.print();break;
+		       case 2:Collections.sort(StudentList,new SortbyFName()); Main.print();break;
+		       case 3:Collections.sort(StudentList,new SortbyLName());Main.print();break;
+		       case 4:Collections.sort(StudentList,new SortbyYear());Main.print();break;
+		       case 5:Collections.sort(StudentList,new SortbyBranch());Main.print();break;
 		       default:System.out.println("Enter the corrrect option");
 		       }
 		       break;
